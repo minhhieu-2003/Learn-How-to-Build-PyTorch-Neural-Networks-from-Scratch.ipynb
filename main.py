@@ -18,19 +18,19 @@ if __name__ == '__main__':
 
     data = df.drop(["customer_id", "phone_no", "year"], axis=1)
 
-   # print(data.tail())  # Print the last few rows of the DataFrame
-    #print(data.describe())  # Print the summary statistics of the DataFrame
+   print(data.tail())  # Print the last few rows of the DataFrame
+    print(data.describe())  # Print the summary statistics of the DataFrame
 
     #checking for null values
-   # print(data.isna().sum()) # Print the number of missing values in each column
+   print(data.isna().sum()) # Print the number of missing values in each column
 
     #dropping null values
     data = data.dropna(axis=0)
-   # print(data.shape) # Print the shape of the DataFrame after dropping missing values
+    print(data.shape) # Print the shape of the DataFrame after dropping missing values
 
     #unique values in gender column
-   # print(data["multi_screen"].unique())
-    #print(data["mail_subscribed"].unique())
+    print(data["multi_screen"].unique())
+    print(data["mail_subscribed"].unique())
 
     #label encoding categorical features
     le = LabelEncoder()
