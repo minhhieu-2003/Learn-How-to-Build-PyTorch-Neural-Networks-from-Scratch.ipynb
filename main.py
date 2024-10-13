@@ -14,7 +14,7 @@ from sklearn.metrics import accuracy_score
 if __name__ == '__main__':
     #loading data
     df = pd.read_csv("D:/codePython/project _python/src/data.csv")
-   # print(df.head())  # Print the first few rows of the DataFrame
+    print(df.head())  # Print the first few rows of the DataFrame
 
     data = df.drop(["customer_id", "phone_no", "year"], axis=1)
 
